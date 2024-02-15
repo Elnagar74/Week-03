@@ -267,24 +267,6 @@ public:
 
 	//-----------------------------------------------------------------------------------
 
-	// Remove duplicates -- Codingninjas
-
-	void removeDuplicates() {
-		for (node* cur = head; cur->next;) {
-			if (cur->data == cur->next->data) {
-				if (cur->next->next == NULL) {
-					cur->next = NULL;
-					break;
-				}
-				cur = delete_link(cur->next);
-			}
-			else {
-				cur = cur->next;
-			}
-		}
-	}
-
-	//-----------------------------------------------------------------------------------
 };
 
 int main()
